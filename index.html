@@ -11,7 +11,86 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
+		<style>
+			/* Center the image using flexbox */
+			body {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: lightgrey;
+				color:#000;
+          
+				text-align: left;
+				font-family: "Helvetica", Arial, sans-serif
+			}
+
+			a {
+				color:darkblue
+			}
+
+            whiteblock {
+              
+				color:white
+			}
+
+            .fixed-width-paragraph {
+             width: 1000px; /* Set the desired width */
+             border: 1px solid black;
+             padding: 30px;
+             margin:30px;
+            }
+        
+			
+
+			.fixed-width-paragraph p {
+				margin: 100;
+			}
+
+			.fixed-width-paragraph ul {
+				list-style-type: disc; /* Use bullets for list items */
+				margin-left: 20px; /* Add indentation for the bullet points */
+				padding-left: 100; /* Remove default padding */
+			}
+
+			.fixed-width-paragraph li {
+				margin-bottom: 5px; /* Add spacing between list items */
+			}
+
+			.image-and-text-container {
+            display: flex;
+            flex-direction: row; /* Display side-by-side */
+            align-items: center; /* Vertically align the content */
+            margin-bottom: 20px; /* Add spacing between sections */
+            }
+
+			/* Style the paragraph text */
+			.image-and-text-container p {
+            flex: 1; /* Allow the paragraph to take up remaining space */
+           }
+
+
+	
+			/* Style the profile picture */
+			#profile-pic {
+            width: 300px; /* Fixed width for the image */
+            height: 300px; /* Fixed height for the image */
+            object-fit: cover; /* Maintain aspect ratio and cover the container */
+            
+            border: 3px solid #000; /* Add a border with color */
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+		
+		figure {
+            margin: 50px; /* Add margin to all sides of the figure */
+        }
+		     
+		  
+			
+        </style>	
+
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -19,39 +98,38 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<a href="index.html" class="logo"><strong>Project Portfolio</strong> <span>by Debrup</span></a>
+						<a class="logo">Biography and Projects - Debrup</a>
 						
 					</header>
+                  
+					<section class="image-and-text-container">
+						
+						<!-- Image on the left -->
+						<figure class="">
+						<img id="profile-pic" src="images/profile_pic.jpg" alt="Debrup Das"></h2>
+						<figcaption> Debrup Das, IIT Kharagpur <a href="mailto:dasdebruprohon20@gmail.com">dasdebruprohon20@gmail.com</a><br><a href="mailto:debrupdas@iitkgp.ac.in">debrupdas@iitkgp.ac.in</a><br><br><span class="icon solid alt fa-phone"></span>
+						<span style="color:darkblue;"> &nbsp;+918478033850</span><br><br><a href="https://github.com/Debrup-61?tab=repositories" class="icon brands alt fa-github"></a><span style="color:darkblue;">&nbsp; Github </span></figcaption>
+				     	</figure>
+						<!-- Paragraph on the right -->
+						
+						<section class="fixed-width-paragraph">
+						  <p>I am a 5th year student of Mathematics and Computing at the Indian Institute of Technology Kharagpur, enrolled in an Integrated Master of Science 5 yr degree.<br> I have been working in <a href="https://adityasomak.github.io/research/">Tr^2AL Lab</a> under <a href="https://adityasomak.github.io/">Prof Somak Aditya</a>, in the domain of neuro-symbolic conversational AI systems.</p>
+						  <p>My research interests are in the domain of NLP with specific interests in: </p>
+						  <ul>
+							<li>Large language models and their ability to perform mathematical and commonsense reasoning.</li>
+							<li>Neuro-symbolic methods using structured knowledge to alleviate limitations in LLMs.</li>
+							<li>Investigation and mitigation of bias and toxicity in LLMs (Prompt Injection Attacks).</li>
+						  </ul>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+						</section>
+						
+					
+					</section>	
+					
+					
 
-				<!-- Banner -->
-					<section id="banner" class="major">
-						<div class="inner">
-							<header class="major">
-								<h2> I am Debrup, a 4th year student of Mathematics and Computing at IIT Kharagpur. Check out my projects below !  </h2>
-							</header>
-							<div class="content">
-								<p> This project portfolio page is aimed at presenting my skills and capabilities before you. It houses some of my most notable involvements and works.</p>
-								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Check It Out</a></li>
-								</ul>
-							</div>
-						</div>
-					</section>
 
+		
 				<!-- Main -->
 					<div id="main">
 
@@ -59,20 +137,68 @@
 							<section id="one" class="tiles">
 								<article>
 									<span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Neuro-symbolic AI <br>under a probabilistic logical reasoning framework<br><span style="color:white;font-size: 15px;"> (Collaborative Project with Deepanaway Ghosal SUTD)</span></h3>
+										<p> 
+											<ul>
+										        <li style="color:white;font-size: 15px;">Use knowledge graphs to extract information.</li>	
+												<li style="color:white;font-size: 15px;">Represent knowledge using probabilistic logic programs.</li>
+												<li style="color:white;font-size: 15px;">Working curretly with FOLIO and related datasets.</li>
+										  </ul>
+										</p>
+									</header>
+								</article>
+
+								<article>
+									<span class="image">
 										<img src="images/pic01.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Travelling Salesman Problem</a></h3>
-										<p> We approach this NP-hard problem from the purview of Genetic Algorithms(GA)</p>
+										
+										<h3>LOGIBOT<br><span style="color:white;font-size: 20px;"> (work ongoing with Rakuten Corporation)</span></h3>
+										<p>
+
+											<ul>
+										        <li style="color:white;font-size: 15px;"> Compositional methods to improve mathematical reasoning of LLMs on the MATH dataset</li>	
+											
+
+										  </ul>
+										</p>
 									</header>
 								</article>
+
+								<article>
+									<span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+									<header class="major">
+										<h3>Prompt Injection Attacks and Liability <br><span style="color:white;font-size: 15px;"> (under the Microsoft Academic Research For Accelerating Foundation Models Grant)</span></h3>
+										<p>
+											
+											<ul>
+										        <li style="color:white;font-size: 15px;"> Framework for quantifiying the sensitivity of LLMs to different parts of a prompt for jailbreak.</li>	
+												<li style="color:white;font-size: 15px;"> Quantifiying the bias of OpenAI models to certain words and use these features for mitigation.</li>
+												<li style="color:white;font-size: 15px;"> Human and automatic evaluation of the framework. </li>
+
+										  </ul>
+										</p>
+									</header>
+								</article>
+
 								<article>
 									<span class="image">
 										<img src="images/pic02.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Genealogy GWAS</a></h3>
-										<p> Improving Genome-Wide Association Studies by leveraging the genealogy of a population</p>
+										<h3>Genealogy GWAS<br><span style="color:white;font-size: 15px;"> (under Prof Simon Gravel, McGill University, MITACS 2022)</span></h3>
+										<p > 
+										  <ul>
+										        <li style="color:white;font-size: 15px;"> Improving Genome-Wide Association Studies by leveraging a genealogy of 3 million individuals in Lac-Saint-Jean region of Quebec.</li>	
+												<li style="color:white;font-size: 15px;"> Using Monte Carlo based simulations of transmission histories of alleles conditioned on existing genealogy and available genetic data.</li>
+										  </ul>
+									    </p>
 									</header>
 								</article>
 								<article>
@@ -80,100 +206,54 @@
 										<img src="images/pic03.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Deep Forests</a></h3>
-										<p>This project involves performing deep learning on a dataset using genetic tree architectures with functional nodes </p>
+										<h3>Deep Forests<br><span style="color:white;font-size: 15px;"> (under Dr Nirupam Chakraborti, Czech Technical University, 2021)</span></h3>
+										<p>
+											<ul>
+										        <li style="color:white;font-size: 15px;">Perform deep learning using subnets of trees.</li>	
+												<li style="color:white;font-size: 15px;">Using nature inspired Predator-prey algorithm and genetic operators to explore the search space of architectures.</li>
+												<li style="color:white;font-size: 15px;">Perform multi-objective optimization on both the size of model and RMSE error.</li>
+										  </ul>
+										</p>
 									</header>
 								</article>
+
 								<article>
 									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
+										<img src="images/pic10.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="https://github.com/Debrup-61/Semeval_News_Category_Detection_using_BERT" class="link">Online News Category Detection </a></h3>
-										<p>We detect news category of a collection of American News Articles using a BERT based transformer model </p>
+										<h3>Additonal links:<br></h3>
+										<p > 
+										  <ul>
+											<li style="color:white;font-size: 15px;"><a style="color:white;font-size: 20px;" href="landing.html">Project visualisations</a></li>	
+											<li style="color:white;font-size: 15px;"><a style="color:white;font-size: 20px;" href="https://drive.google.com/file/d/1veNvVPlE2rygZkwhJvIV7_qRkR0bddie/view?usp=drive_link">Resume</a></li>	
+											<li style="color:white;font-size: 15px;"><a style="color:white;font-size: 20px;" href="https://drive.google.com/file/d/17-kr7atQACcej1jWVii1I-PFc5pScb87/view?usp=sharing">Online Certifications</a></li>	
+												
+
+										  </ul>
+									    </p>
 									</header>
 								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic05.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="https://github.com/Debrup-61/Neural_style_transfer" class="link">Neural Style Transfer</a></h3>
-										<p>Using Pytorch we develop a basic neural style transfer model using convolutional neural networks (VGG19)</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/pic06.jpg" alt="" />
-									</span>
-									<header class="major">
-										<h3><a href="landing.html" class="link">Machine Learning Tasks in Python</a></h3>
-										<p> This project consists of a series of tasks that I coded using python libraries such as numpy, sklearn, pandas, etc</p>
-									</header>
-								</article>
+								
+								
 							</section>
 
 						<!-- Two -->
 							<section id="two">
 								<div class="inner">
 									<header class="major">
-										<h2>Areas Of Interest</h2>
+										<h2>Other Areas Of Interest</h2>
 									</header>
-									<p> I am a keen follower of research in Natural Language Processing, Computer Vision, Genetic Algorithms and other subdomains of AI. I am also very passionate about statistics and its applications to diverse fields of study. I am always motivated to conduct research in interdisciplinary laboratory environments and explore new fields of study.</p>
-									<ul class="actions">
-										<li><a href="landing.html" class="button next">More Details</a></li>
-									</ul>
+									<p style="color:white;"> I am a keen follower of research in Computer Vision, Genetic Algorithms and other subdomains of AI. I am passionate about statistics and its applications to diverse fields of study. I am always motivated to conduct research in interdisciplinary laboratory environments and explore new fields of study.</p>
+									
 								</div>
 							</section>
 
 					</div>
 
 				<!-- Contact -->
-					<section id="contact">
-						<div class="inner">
-							
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Email</h3>
-										<span>debrupdas@iitkgp.ac.in<br/>dasdebruprohon20@gmail.com</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-phone"></span>
-										<h3>Phone</h3>
-										<span>+918478033850</span>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-home"></span>
-										<h3>Institute</h3>
-										<span>Indian Institute Of Technology Kharagpur<br />
-										Kharagpur, West Bengal 721302<br />
-										India</span>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<ul class="icons">
-								
-								
-								<li><a href="https://github.com/Debrup-61?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Debrup</li>
-							</ul>
-						</div>
-					</footer>
+					
+				
 
 			</div>
 
